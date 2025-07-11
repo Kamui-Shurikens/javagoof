@@ -10,3 +10,4 @@ FROM tomcat:8.5.21
 RUN mkdir /tmp/extracted_files
 COPY --chown=tomcat:tomcat web.xml /usr/local/tomcat/conf/web.xml
 COPY --from=build /usr/src/goof/todolist-web-struts/target/todolist.war /usr/local/tomcat/webapps/todolist.war
+# Checking git events
